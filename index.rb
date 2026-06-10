@@ -1,8 +1,11 @@
 
 
-def cesar_cipher(letter, key)
-  eng_alphabet_upp = ("A".."Z").to_a
+def cesar_cipher(phrase)
+strArray =  phrase.split("")
 
+p strArray
+=begin
+eng_alphabet_upp = ("A".."Z").to_a
 	## loop for replacing string with corresponding key
   eng_alphabet_upp.each_with_index do |word, idx| 
     if word == letter
@@ -14,7 +17,8 @@ def cesar_cipher(letter, key)
       end
     end
   end
+=end
 end
 
 
-cesar_cipher("U",6)
+cesar_cipher("Hi there")
